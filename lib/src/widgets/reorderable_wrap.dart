@@ -1273,7 +1273,7 @@ class _ReorderableWrapContentState extends State<_ReorderableWrapContent>
             ConstrainedBox(constraints: constraints, child: child),
         elevation: 6.0,
         color: Colors.transparent,
-        borderRadius: BorderRadius.zero,
+        borderRadius: BorderRadius.all(Radius.circular(12)),
       ),
     );
   }

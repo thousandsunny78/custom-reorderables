@@ -1000,18 +1000,11 @@ class _ReorderableSliverListState extends State<ReorderableSliverList>
   Widget defaultBuildDraggableFeedback(
       BuildContext context, BoxConstraints constraints, Widget child) {
     return Transform(
-      transform: Matrix4.rotationZ(0),
+      transform: new Matrix4.rotationZ(0),
       alignment: FractionalOffset.topLeft,
       child: Material(
-        child: ConstrainedBox(
-          constraints: constraints,
-          child: MediaQuery.removeViewInsets(
-            context: context,
-            child: child,
-            removeBottom: true,
-            removeTop: true,
-          ),
-        ),
+        child:
+        ConstrainedBox(constraints: constraints, child: child),
         elevation: 6.0,
         color: Colors.transparent,
         borderRadius: BorderRadius.all(Radius.circular(12)),
