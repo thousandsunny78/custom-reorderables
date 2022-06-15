@@ -1270,7 +1270,7 @@ class _ReorderableWrapContentState extends State<_ReorderableWrapContent>
       alignment: FractionalOffset.topLeft,
       child: Material(
         child:
-            Card(child: ConstrainedBox(constraints: constraints, child: child)),
+            ConstrainedBox(constraints: constraints, child: child),
         elevation: 6.0,
         color: Colors.transparent,
         borderRadius: BorderRadius.zero,
